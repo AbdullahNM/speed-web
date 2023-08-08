@@ -1,0 +1,20 @@
+.contact-us-section {
+    background-color: #333333; /* Blackish grey background color */
+    color: #ffffff; /* Text color for contact information */
+    padding: 40px 0;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  

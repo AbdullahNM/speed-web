@@ -1,0 +1,22 @@
+    .background{
+        background-color: white;
+        z-index: 10;
+        background-blend-mode: color;
+    }
+  .colored-container {
+    background-image: url('../assets/pic1.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aqua;
+    opacity: 50;
+    height: 70.33vh;
+    width: 100%;
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 48% 100%);
+    display: flex; /* Add this property to make inner content align at the top */
+    align-items: flex-start; /* Align the inner content at the top */
+    
+  }
+  .cardimage{
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 48% 100%);
+  }

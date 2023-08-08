@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navigation from "./components/Navigation";
+import ImageSlide from "./components/ImageSlide";
+import Content from "./components/Content.jsx"
+import CarouselSlide from "./components/CarouselSlide";
+import { Row, Col, Container, Image, Table } from "react-bootstrap";
+import { Ratio } from "react-bootstrap";
+import ContactUs from "./components/ContactUs";
 
-function App() {
+let App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navigation/>
+      <ImageSlide/>
+      <Content/>
+      <ContactUs/>
+    </>
   );
-}
+};
 
 export default App;
