@@ -1,19 +1,42 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import '../css/ContactUs.css'
-
-let ContactUs = ()=> {
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import '../css/ContactUs.css'; // Import your custom CSS for styling
+import image from '../assets/Speed_Cargo_Movers-removebg-preview.png'
+const ContactUs = () => {
   return (
-    <section className="contact-us-section">
+    <footer className="footer" id="contact">
       <Container>
-        <div className="contact-info">
-          <h2>Contact Us</h2>
-          <p>Address: 123 Street, City, Country</p>
-          <p>Mobile: +1 (123) 456-7890</p>
-          <p>Email: example@example.com</p>
-        </div>
+        <Row>
+        <Col md={6} className="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Off no 48, 4th floor,gaya bldg,yusif mehrali road, masjid {`(w)`} - 400 003</p>
+            <Button variant='outline-light'>
+              <strong>Phone:</strong> <a href="tel:+919323837198" style={{textDecoration:'none',color:'#f04802'}}>+91 9323837198</a>
+            </Button>
+            <Button variant='outline-light'>
+              <strong>Email:</strong> <a href='mailto:speed_c_m@hotmail.com' style={{color:'#f04802'}}>speed_c_m@hotmail.com</a>
+            </Button>
+          </Col>
+          
+          <Col md={6} className="footer-logo">
+            <img
+              src={image} // Replace with your logo path
+              alt="Logo"
+              className="logo-img"
+            />
+            <Row>
+          <Col>
+            <p className="text-center">
+              &copy; 2023 Speed Cargo Movers. All rights reserved.
+            </p>
+          </Col>
+        </Row>
+          </Col>
+          
+        </Row>
+        
       </Container>
-    </section>
+    </footer>
   );
 }
 

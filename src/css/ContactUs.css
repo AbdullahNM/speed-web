@@ -1,20 +1,46 @@
-.contact-us-section {
-    background-color: #333333; /* Blackish grey background color */
-    color: #ffffff; /* Text color for contact information */
-    padding: 40px 0;
-  }
-  
-  .contact-info {
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
+.footer {
+  background-color: #222; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 60px 0;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.logo-img {
+  max-width: 100px; /* Set the maximum width for the logo */
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact h4 {
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
