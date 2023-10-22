@@ -1,0 +1,7 @@
+/* Add hover effect to badges */
+.badge-hover:hover {
+    background-color: orange; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+    transition: 0.3s; /* Add a smooth transition effect */
+  }
+  

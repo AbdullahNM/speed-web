@@ -68,59 +68,14 @@ let GridExample = () => {
               </div>
             </Card>
           </Col>
-          {/* <Col key={2}>
-            <Card style={{ width: "70hh", height: "60vh" }}>
-              <div className="d-flex text-light bg-dark">
-                <div>
-                  <Card.Img
-                    variant="top"
-                    src={image1} // Replace with your image URL or use the actual image URL
-                    style={{ width: "50hh", height: "50vh" }} // Set image dimensions
-                  />
-                </div>
-                <div className="flex-grow-1">
-                  <Card.Body style={{ color: "white" }}>
-                    <Card.Title style={{ justifyContent: "center" }}>
-                      Who Are we
-                    </Card.Title>
-                    <Card.Text>
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </Card.Text>
-                  </Card.Body>
-                </div>
-              </div>
-            </Card>
-          </Col>
-          <Col key={3}>
-            <Card style={{ width: "70hh", height: "60vh" }}>
-              <div className="d-flex ">
-                <div>
-                  <Card.Img
-                    variant="top"
-                    src={image1} // Replace with your image URL or use the actual image URL
-                    style={{ width: "50hh", height: "50vh" }} // Set image dimensions
-                  />
-                </div>
-                <div className="flex-grow-1">
-                  <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                      This is a longer card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </Card.Text>
-                  </Card.Body>
-                </div>
-              </div>
-            </Card>
-          </Col> */}
-        </Row>
+          </Row>
       </Container>
       
     </>
   );
 };
+
+
+
 
 export default GridExample;

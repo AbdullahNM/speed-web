@@ -1,88 +1,39 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import React from 'react';
+import {Container, Row } from 'react-bootstrap';
+import CustomBadge from './CustomBadge';
 
 const Services = () => {
+  const textStyle = {
+    fontSize: '1 rem',
+    fontWeight: 'bold',
+    textWrap: 'wrap',
+    color: '#f04802',
+    content: 'left',
+    padding: '5vh 0',
+    width: '100%',
+    height: '100%', 
+    boxSizing: 'border-box'
+  }
+
+  const listcontent = ['Best frieght Charges','24/7 Support','Pan India Services','All load sizes']
   return (
-    <>
     <div className="container-fluid pt-5">
       <Container>
         <div className="text-center pb-2">
-          <h6 className="text-primary text-uppercase font-weight-bold">
-            Our Services
-          </h6>
-          <h1 className="mb-4">Best Logistic Services</h1>
+          <h5 className="text-uppercase font-weight-bold" style={textStyle}>
+            What do we deliver
+          </h5>
         </div>
         <Row className="pb-3">
-          <Col lg={3} md={6} className="text-center mb-5">
-            <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-              <i className="fa fa-2x fa-plane text-dark pr-3"></i>
-              <h6 className="text-white font-weight-medium m-0">Air Freight</h6>
-            </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a className="border-bottom text-decoration-none" href="#home">
-              Read More
-            </a>
-          </Col>
-          <Col lg={3} md={6} className="text-center mb-5">
-            <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-              <i className="fa fa-2x fa-ship text-dark pr-3"></i>
-              <h6 className="text-white font-weight-medium m-0">Ocean Freight</h6>
-            </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a className="border-bottom text-decoration-none" href="#home">
-              Read More
-            </a>
-          </Col>
-          <Col lg={3} md={6} className="text-center mb-5">
-            <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-              <i className="fa fa-2x fa-truck text-dark pr-3"></i>
-              <h6 className="text-white font-weight-medium m-0">
-                Land Transport
-              </h6>
-            </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a className="border-bottom text-decoration-none" href="#home">
-              Read More
-            </a>
-          </Col>
-          <Col lg={3} md={6} className="text-center mb-5">
-            <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-              <i className="fa fa-2x fa-store text-dark pr-3"></i>
-              <h6 className="text-white font-weight-medium m-0">Cargo Storage</h6>
-            </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a className="border-bottom text-decoration-none" href="#home">
-              Read More
-            </a>
-          </Col>
+        {listcontent.map((item, index) => {
+            return (
+              <CustomBadge text={item} />
+            );
+        })}
         </Row>
       </Container>
     </div>
-    </>
-  )
+  );
 }
 
-export default Services
-
-// import React from 'react';
-// import { Container, Row, Col } from 'react-bootstrap';
-
-// function ServicesSection() {
-//   return (
-    
-//   );
-// }
-
-// export default ServicesSection;
+export default Services;

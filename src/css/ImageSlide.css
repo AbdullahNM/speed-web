@@ -1,10 +1,10 @@
-    .background{
+    /* .background{
         background-color: white;
         z-index: 10;
         background-blend-mode: color;
     }
   .colored-container {
-    background-image: url('../assets/pic1.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url('../assets/pic1.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,11 +13,43 @@
     height: 70.33vh;
     width: 100%;
     clip-path: polygon(21% 0, 100% 0, 100% 100%, 48% 100%);
-    display: flex; /* Add this property to make inner content align at the top */
-    align-items: flex-start; /* Align the inner content at the top */
-    
+    display: flex; /* Add this property to make inner content align at the top
+    align-items: flex-start; /* Align the inner content at the top
+  } */
+
+  .cardimage {
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 54% 100%);
+    height: 90vh; /* Adjust the height as needed */
   }
-  .cardimage{
-    clip-path: polygon(21% 0, 100% 0, 100% 100%, 48% 100%);
-    
+  
+  @media (max-width: 768px) {
+    .cardimage {
+      height: 60vh; /* Adjust the height for smaller screens */
+    }
   }
+  
+  .cardimage2 {
+    clip-path: polygon(0 0, 45% 0, 64% 100%, 0% 100%);
+    height: 90vh; 
+    padding: 0;
+    opacity: 40%;/* Adjust the height as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .cardimage2 {
+      height: 60vh; /* Adjust the height for smaller screens */
+    }
+  }
+  .text-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a background color for text readability */ /* Add padding for spacing */
+    border-radius: 8px; /* Add rounded corners for the text container */
+    text-align: center; /* Center-align the text */
+    max-width: 80%; /* Limit the width of the text container */
+    color: inherit; /* Inherit the text color from the parent (original color) */
+  }
+  
+  /* Add any other responsive CSS styles as needed */
+  
+  
+  /* Add any other responsive CSS styles as needed */
+  
