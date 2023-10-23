@@ -14,7 +14,7 @@ let App = () => {
       <ImageSlide/>
       <Content/>
       <Services/>
-      <ContactUs/>
+      <ContactUs id ="contact" />
       </div>
     </>
   );

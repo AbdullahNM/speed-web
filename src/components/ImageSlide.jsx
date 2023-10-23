@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import image1 from '../assets/pic2.jpeg';
-import image2 from '../assets/pic1.jpeg'
+import image1 from '../assets/pic6.jpeg';
+import image2 from '../assets/pic6.jpeg'
 import '../css/ImageSlide.css';
 
 const  ImgOverlayCard = () =>{

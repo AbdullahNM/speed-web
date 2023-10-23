@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import image1 from "../assets/pic4.jpeg";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 //import { ListGroup } from "react-bootstrap";
 import TextContent from "./TextContent";
 import "../css/Content.css";
@@ -23,23 +23,11 @@ let GridExample = () => {
           className="g-4 flex-row d-flex justify-content-evenly"
         >
           <Col key={0}>
-            <Card
-              className="border-0 rounded bg-dark"
-              style={{ justifyContent: "center" }}
+            <Image fluid rounded
+              className="border-0 rounded d-flex justify-content-center"
+              src={image1}
             >
-              <div className="d-flex justify-content-center">
-                <div>
-                  <Card.Img
-                    variant="top"
-                    src={image1} // Replace with your image URL or use the actual image URL
-                    style={{ width: "70hh", height: "60vh", border: "none" }} // Set image dimensions
-                  />
-                </div>
-                {/* <div className="flex-grow-1">
-                
-              </div> */}
-              </div>
-            </Card>
+            </Image>
           </Col>
 
           <Col key={1}>
